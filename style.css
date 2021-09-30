@@ -1,0 +1,103 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*
+{
+    box-sizing: border-box;
+}
+body,html
+{
+    margin: 0;
+    text-align: center;
+}
+.full-screen-container
+{
+    background-image: url("images/pattern-background-desktop.svg");
+    width:100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-container
+{
+    background-color: white;
+    width: 55%;
+    min-width: 300px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(136, 136, 241,0.8);
+    padding-bottom: 20px;
+}
+.card-image
+{
+    width:100%;
+    min-width: inherit;
+    max-width: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+.card-header
+{
+    margin:0px;
+    margin-top:15px;
+}
+.card-summary
+{
+    margin: 10px 30px;
+    margin-bottom: 10px;
+}
+.card-payment
+{
+    position:relative;
+    margin: 25px 50px;
+}
+.card-payment .plan
+{
+    margin-bottom: 0.4em;
+    margin-top:3px;
+    font-weight: bold;
+}
+.card-payment .music-icon
+{
+    position: absolute;
+    top:0em;
+    left:0em;
+}
+.card-payment .change-link
+{
+    position: absolute;
+    right:0em;   
+    top:0.8em;
+    font-weight: bolder;
+}
+.plan-container
+{
+    margin-left:3.5em;
+    text-align: left;
+}
+.payment-btn
+{
+    background-color: blue;
+    width:70%;
+    color:white;
+    font-weight: bold;
+    padding : 10px 0px;
+    border-radius: 10px;
+    margin-bottom:15px;
+}
+.cancel-lnk
+{
+    text-decoration: none;
+}
+@media (max-width:480px)
+{
+    .full-screen-container
+    {
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+}
+
